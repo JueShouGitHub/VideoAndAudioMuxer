@@ -3,6 +3,43 @@
 一个简单的音视频你合成的框架，支持图片合成音视频（有内置的几款音频），支持图片编辑后合成音视频
 =
 
+### 使用方法
+#### gradle 
+1、第一步
+```aidl 
+    allprojects {
+    		repositories {
+    			...
+    			maven { url 'https://jitpack.io' }
+    		}
+    	}
+```
+2、第二步
+```aidl 
+    dependencies {
+    	        compile 'com.github.JueShouGitHub:VideoAndAudioMuxer:1.0.2'
+    	}
+```
+
+#### maven
+1、第一步
+```aidl 
+    <repositories>
+    		<repository>
+    		    <id>jitpack.io</id>
+    		    <url>https://jitpack.io</url>
+    		</repository>
+    	</repositories>
+```
+2、第二步
+```aidl 
+    <dependency>
+    	    <groupId>com.github.JueShouGitHub</groupId>
+    	    <artifactId>VideoAndAudioMuxer</artifactId>
+    	    <version>1.0.2</version>
+    	</dependency>
+```
+
 ###### 本项目中图片生成视频用的时```JavaCV```来实现的，JavaCV的使用方法 [请参照](https://github.com/bytedeco/javacv)
 ###### 还有一点，该项目还集成了RxJava来处理异步操作，所以就不必要在重复添加依赖了，还有retrofit也集成了，不需要的小伙伴可以直接去掉
 ```aidl 
