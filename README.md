@@ -4,42 +4,7 @@
 =
 
 ### 使用方法
-[^_^]:
-[^_^]: #### gradle 
-[^_^]: 1、第一步
-[^_^]: ```aidl 
-    allprojects {
-    		repositories {
-    			...
-    			maven { url 'https://jitpack.io' }
-    		}
-    	}
-```
-[^_^]: 2、第二步
-[^_^]: ```aidl 
-    dependencies {
-    	        compile 'com.github.JueShouGitHub:VideoAndAudioMuxer:1.0.2'
-    	}
-```
 
-#### maven
-1、第一步
-```aidl 
-    <repositories>
-    		<repository>
-    		    <id>jitpack.io</id>
-    		    <url>https://jitpack.io</url>
-    		</repository>
-    	</repositories>
-```
-2、第二步
-```aidl 
-    <dependency>
-    	    <groupId>com.github.JueShouGitHub</groupId>
-    	    <artifactId>VideoAndAudioMuxer</artifactId>
-    	    <version>1.0.2</version>
-    	</dependency>
-```
 
 ###### 本项目中图片生成视频用的时```JavaCV```来实现的，JavaCV的使用方法 [请参照](https://github.com/bytedeco/javacv)
 ###### 还有一点，该项目还集成了RxJava来处理异步操作，所以就不必要在重复添加依赖了，还有retrofit也集成了，不需要的小伙伴可以直接去掉
