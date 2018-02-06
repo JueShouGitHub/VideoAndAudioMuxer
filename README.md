@@ -5,9 +5,9 @@
 
 ### 使用方法
 [^_^]:
-#### gradle 
-1、第一步
-```aidl 
+[^_^]: #### gradle 
+[^_^]: 1、第一步
+[^_^]: ```aidl 
     allprojects {
     		repositories {
     			...
@@ -15,8 +15,8 @@
     		}
     	}
 ```
-2、第二步
-```aidl 
+[^_^]: 2、第二步
+[^_^]: ```aidl 
     dependencies {
     	        compile 'com.github.JueShouGitHub:VideoAndAudioMuxer:1.0.2'
     	}
